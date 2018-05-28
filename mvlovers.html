@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<title>MVLOVERS - Every Thing You Need</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head><style>
+  * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  top: 14px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.textt {
+  color: #f1f1f1;
+  font-size: 15px;
+  padding: 40px 0px;
+  position: absolute;
+  bottom: 40px;
+  width: 300px;
+  height: 50px;
+  left: 30px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+  text-align: center;
+}
+
+.mySlides .textt{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 550px;
+    height: 120px;
+    left: 120px;
+    bottom: 70px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 0px;
+  width: 0px;
+  margin: 0 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.xop-section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0% 0%;
+}
+ 
+.xop-grid {
+  margin: 0px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+ 
+ 
+.xop-grid li {
+  width: 328px;
+  height: 328px;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+ 
+.xop-box {
+  width: 70%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+    border-radius: 0px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+  -moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+}
+ 
+.xop-box:hover {
+  transform: scale(1.1); 
+}
+
+.xop-img-1 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("dd.jpg");
+  border-radius: 10px;
+
+  border: 5px solid black;
+  background-size: 100% 100%;
+
+}
+
+.xop-img-2 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("ff.jpg");
+  border-radius: 10px;
+
+  border: 5px solid black;
+  background-size: 100% 100%;
+
+}
+
+.xop-img-3 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("AA.jpg");
+  border-radius: 10px;
+
+  border: 5px solid black;
+  background-size: 100% 100%;
+}
+
+.xop-img-4 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("BB.jpg");
+  border: 5px solid black;
+  border-radius: 10px;
+  background-size: 100% 100%;
+}
+
+.xop-img-5 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("CC.jpg");
+  border: 5px solid black;
+  border-radius: 10px;
+
+  background-size: 100% 100%;
+}
+.xop-img-6 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("ee.jpg");
+  border: 5px solid black;
+  border-radius: 10px;
+  background-size: 100% 100%;
+}
+
+.xop-img-7 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("ee.jpg");
+  border: 5px solid black;
+  border-radius: 10px;
+  background-size: 100% 100%;
+}
+.xop-img-8 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("BB.jpg");
+  border: 5px solid black;
+  border-radius: 10px;
+  background-size: 100% 100%;
+}
+
+.xop-info {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  border: 0px solid black;
+    opacity: 0.6;
+    background-color: #ffffff;
+    filter: alpha(opacity=60);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.xop-info h3 {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  color: #fff;
+  font-size: 42px;
+  margin: 0 30px;
+  padding: 100px 0 0 0;
+  line-height: 1.5;
+}
+
+.xop-info p {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #000000;
+  padding: 4px 5px;
+  margin: 0 30px;
+  font-size: 14px;
+  line-height: 2;
+}
+.welcome {
+  background-color: #009688;
+  padding: 3px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 0px;
+
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style></head>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <h1>Categories</h1>
+  <a href="#" class="w3-bar-item w3-button">Bollywood movies</a>
+  <a href="#" class="w3-bar-item w3-button">Hollywood (Hindi Dubbed)</a>
+  <a href="#" class="w3-bar-item w3-button">South Indian (Hindi Dubbed)</a>
+  <a href="#" class="w3-bar-item w3-button">Punjabi Special</a>
+  <a href="#" class="w3-bar-item w3-button">TV-shows</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Tranding</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Recently Added</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Requested</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">DMCA</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">SUPER 3 <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">DEADPOOL 2 (2018)</a>
+      <a href="#" class="w3-bar-item w3-button">AVENGERS INFINITY WAR (2018)</a>
+      <a href="#" class="w3-bar-item w3-button">PACIFIC RIM (2018)</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- head logo of site -->
+<div class="w3-display-container w3-animate-opacity">
+ <img src="#" alt="boat" style="width:100%;min-height:100%;max-height:100%;">
+</div>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="c2.jpg" style="width:100%">
+   <!-- <div class="text"><h3>Welcome to MVLOVERS</h3>
+      <p>MOVIES & TV-SHOWS</p></div>-->
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="c1.jpg" style="width:100%">
+   <!-- <div class="text"><h3>Avengers Infinity War (2018)</h3>
+      <p>[HDTS] IMDb 8.8 Genre Action,Adventure,SciFi</p></div> -->
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="c3.jpg" style="width:100%">
+    <!-- <div class="text"><h3>Deadpool 2 (2018)</h3> <p>[HDTS] IMDb 8.2 Genre Action,Adventure,Comedy</p></div> -->
+  </div>
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;">+</a>
+</div>
+<div class="welcome">
+  <h4>Welcome to MVLOVERS</h4>
+  <p>
+MVLOVERS.com - just a faster and better place for digital download and watching online movies and TV-Series in HD, 720p, 1080p and SD quality for free.</p>
+</div>
+
+<div class="xop-section">
+  <ul class="xop-grid">
+    <li>
+      <div class="xop-box xop-img-1">
+        <a href="https://www.google.com">
+        <div class="xop-info">
+          <p>Deadpool 2016</p>
+        </div></a>
+      </div>
+    </li>
+
+    <li>
+      <div class="xop-box xop-img-2">
+        <a href="https://www.google.com">
+        <div class="xop-info">
+          <p>Deadpool 2 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-3">
+        <a href="#">
+        <div class="xop-info">
+          <p>Avengers Infinity War 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-4">
+        <a href="#">
+        <div class="xop-info">
+          <p>Black Panther 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-5">
+        <a href="#">
+        <div class="xop-info">
+          <p>Spiderman Homecoming 2017</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-2">
+        <a href="https://www.google.com">
+        <div class="xop-info">
+          <p>Deadpool 2 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-3">
+        <a href="#">
+        <div class="xop-info">
+          <p>Avengers Infinity War 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-4">
+        <a href="#">
+        <div class="xop-info">
+          <p>Black Panther 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-5">
+        <a href="#">
+        <div class="xop-info">
+          <p>Spiderman Homecoming 2017</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-2">
+        <a href="https://www.google.com">
+        <div class="xop-info">
+          <p>Deadpool 2 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-3">
+        <a href="#">
+        <div class="xop-info">
+          <p>Avengers Infinity War 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-4">
+        <a href="#">
+        <div class="xop-info">
+          <p>Black Panther 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-5">
+        <a href="#">
+        <div class="xop-info">
+          <p>Spiderman Homecoming 2017</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-2">
+        <a href="https://www.google.com">
+        <div class="xop-info">
+          <p>Deadpool 2 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-3">
+        <a href="#">
+        <div class="xop-info">
+          <p>Avengers Infinity War 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-4">
+        <a href="#">
+        <div class="xop-info">
+          <p>Black Panther 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-5">
+        <a href="#">
+        <div class="xop-info">
+          <p>Spiderman Homecoming 2017</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-8">
+        <a href="#">
+        <div class="xop-info">
+          <p>Spiderman Homecoming 2017</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-2">
+        <a href="https://www.google.com">
+        <div class="xop-info">
+          <p>Deadpool 2 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-3">
+        <a href="#">
+        <div class="xop-info">
+          <p>Avengers Infinity War 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-4">
+        <a href="#">
+        <div class="xop-info">
+          <p>Black Panther 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-5">
+        <a href="#">
+        <div class="xop-info">
+          <p>Spiderman Homecoming 2017</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-7">
+        <a href="#">
+        <div class="xop-info">
+          <p>Avengers Infinity War 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-6">
+        <a href="#">
+        <div class="xop-info">
+          <p>Jurasic World 2018</p>
+          </div>
+        </div></a>
+      </div>
+    </li>
+
+
+  </ul>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>JOIN OUR SOCIAL MEDIA GROUP</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-whatsapp"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-telegram"></i></a>
+    <p>Read this for <a href="#" target="_blank">DMCA</a></p>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
