@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<title>MVLOVERS - Every Thing You Need</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<head><style>
+.player {
+  height: 500px;
+}
+* {
+    box-sizing: border-box;
+}
+.xop-grid {
+  margin: 0px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+ 
+ 
+.xop-grid li {
+  width: 210px;
+  height: 300px;
+  background-color: grey;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+
+.xop-img-1 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("dd.jpg");
+  border-radius: 10px;
+
+  border: 5px solid black;
+  background-size: 100% 100%;
+
+}
+
+.xop-img-2 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("ff.jpg");
+  border-radius: 10px;
+
+  border: 5px solid black;
+  background-size: 100% 100%;
+
+}
+
+.xop-img-3 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("ee.jpg");
+  border-radius: 10px;
+
+  border: 5px solid black;
+  background-size: 100% 100%;
+}
+
+.xop-img-4 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("BB.jpg");
+  border: 5px solid black;
+  border-radius: 10px;
+  background-size: 100% 100%;
+}
+ 
+
+.xop-img-5 {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* bottom, image */
+  url("AA.jpg");
+  border: 5px solid black;
+  border-radius: 10px;
+
+  background-size: 100% 100%;
+  }
+.xop-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-left: 0px;
+  cursor: pointer;
+    border-radius: 0px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+  -moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+}
+.xop-box:hover {
+  transform: scale(1.1); 
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #222;
+    color: #ffffff;
+    padding: 9px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 2px;
+    margin-bottom: 10px;
+    background-color: #008886;
+    padding: 0px;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: ;
+}
+.col-6 p{
+  size: 8px;
+  color: grey;
+}
+.aside {
+    background-color: #009688;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #009688;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+ 
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 600px) {
+    .player {
+        height: 250px;    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style></head>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <h1>Categories</h1>
+  <a href="#" class="w3-bar-item w3-button">Bollywood movies</a>
+  <a href="#" class="w3-bar-item w3-button">Hollywood (Hindi Dubbed)</a>
+  <a href="#" class="w3-bar-item w3-button">South Indian (Hindi Dubbed)</a>
+  <a href="#" class="w3-bar-item w3-button">Punjabi Special</a>
+  <a href="#" class="w3-bar-item w3-button">TV-shows</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Tranding</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Recently Added</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Requested</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">DMCA</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">SUPER 3 <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">DEADPOOL 2 (2018)</a>
+      <a href="#" class="w3-bar-item w3-button">AVENGERS INFINITY WAR (2018)</a>
+      <a href="#" class="w3-bar-item w3-button">PACIFIC RIM (2018)</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Tranding</a>
+    <a href="#work" class="w3-bar-item w3-button">Recently Added</a>
+    <a href="#pricing" class="w3-bar-item w3-button">request</a>
+    <a href="#contact" class="w3-bar-item w3-button">DMCA</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- head logo of site -->
+<div class="w3-display-container w3-animate-opacity">
+ <img src="#" alt="boat" style="width:100%;min-height:100%;max-height:100%;">
+</div>
+
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-style: solid;
+    border-width: 20px;
+    border-color: black;
+    z-index: 1;">+</a>
+
+
+<div style="margin-top: 40px">
+<div class="player"><iframe src="https://www.youtube.com/embed/D86RtevtfrA" frameborder="no" scrolling="no" allowfullscreen="yes" style="width: 100%; height: 100%;"></iframe></div>
+<div class="header">
+  <p>Now Play Online With Power Of Openload -----> </p>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li style="height: 450px"><div class="xop-box xop-img-2">
+      </div></li>
+    <li style="padding: 10px;background-color: #008900" >Download Torrent</li>
+  </ul>
+</div>
+
+<div class="col-6">
+  <h3 style="color: #009688">Deadpool 2 (2018)</h3>
+  <p>This is the origin story of former Special Forces operative turned mercenary Wade Wilson, who after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed with his new abilities and a dark, twisted sense of humor, Deadpool hunts down the man who nearly destroyed his life....</p><hr>
+  <p>Genre:
+Action, Adventure, Comedy</p><hr>
+<p>StarCasts:
+Ryan Reynolds, Karan Soni, Ed Skrein, Michael Benyaer</p><hr>
+<p>Director:
+Tim Miller</p><hr>
+<p>Writer:
+Rhett Reese, Paul Wernick</p><hr>
+<p>Language:Hindi,English</p><hr>
+<p>Country:USA</p><hr>
+<p>Release:
+Feb 12, 2016</p><hr>
+<p>Quality:
+HD 720p</p><hr>
+<hr>
+<p>Runtime:
+1h 48min (108 min)</p><hr>
+<p>Original Size:
+858 MB</p>
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+    <h2>DOWNLOAD LINKS</h2>
+<a class="" href="javascript:void(0)" title="Facebook"><i class="material-icons">folder</i> Gdrive Server</a>
+<p></p>
+<a class="" href="javascript:void(0)" title="Facebook"><i class="material-icons">videocam</i>Openload Server</a>
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+  <h1>Suggested to you</h1>
+  <ul class="xop-grid">
+    <li>
+      <div class="xop-box xop-img-1">
+        <a href="https://www.google.com">
+        <div class="xop-info">
+          <p>Deadpool 2016</p>
+        </div></a>
+      </div>
+    </li>
+
+    <li>
+      <div class="xop-box xop-img-2">
+        <a href="https://www.google.com">
+        <div class="xop-info">
+          <p>Deadpool 2 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-3">
+        <a href="#">
+        <div class="xop-info">
+          <p>Avengers Infinity War 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-4">
+        <a href="#">
+        <div class="xop-info">
+          <p>Black Panther 2018</p>
+        </div></a>
+      </div>
+    </li>
+    <li>
+      <div class="xop-box xop-img-5">
+        <a href="#">
+        <div class="xop-info">
+          <p>Spiderman Homecoming 2017</p>
+        </div></a>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>JOIN OUR SOCIAL MEDIA GROUP</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-whatsapp"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-telegram"></i></a>
+    <p>Read this for <a href="#" target="_blank">DMCA</a></p>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
